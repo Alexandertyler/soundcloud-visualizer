@@ -591,6 +591,19 @@ var UiUpdater = function() {
     };
 };
 
+var scConnect = function() {
+    SC.initialize({
+      client_id: '4e27c4b4d2d2e2fc6dbb13b67626c6d5',
+      redirect_uri: 'callback.html'
+    });
+
+    SC.connect().then(function() {
+      return SC.get('/me');
+    }).then(function(me) {
+      alert('Hello, ' + me.username);
+    });
+};
+
 window.onload = function init() {
 
     var visualizer = new Visualizer();
@@ -662,6 +675,5 @@ window.onload = function init() {
                 break;
         }   
     }
-
 
 };
