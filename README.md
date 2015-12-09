@@ -49,6 +49,13 @@ I can think of a few improvements that I might implement, or someone else might 
 - More types of visualization. I've written the code in a pretty modular way so it's simple to write a visualization that can plug into the app (see below)
 - Better browser support. I'm sure there can be more done on this to get it working at least in Firefox and mobile WebKit browsers, with perhaps fallbacks for IE.
 
+
+Alex Improvement Ideas:
+
+- Side bar that allows scrolling through your stream.
+- Color pallete swaps in the form of a toolbar on the side.
+
+
 # Writing visualizations
 
 If you want to fork this and write your own visualizations, they way I've set it up is pretty simple:
